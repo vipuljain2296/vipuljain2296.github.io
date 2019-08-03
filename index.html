@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 ">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Josefin+Sans|Lora|Oxygen|Slabo+27px" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <title>Tic Tac Toe</title>
+
+</head>
+
+<body >
+    
+    <div class="container-fluid">
+        <h2 class="text-centre" style="color:whitesmoke; display:none" >Welcome to Tic Tac Toe</h2>
+        <hr id="texthr" style="display:none">
+    </div>
+
+<!--Game table-->
+    
+    <div id ="wholewindow"class="container">
+        <div class="row justify-content-md-center">
+
+            <div id="tictactoediv" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="table-responsive">
+                    <table id="tictactoetable" class="table table-bordered" style="display:none">
+                        <tbody>
+                            <tr>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                            <tr>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+
+            <!--Game Message Div-->
+            <div id="tictactoedivmessage" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                
+               
+                <div id="gameinfo" class="panel panel-primary" style="display:none">
+                    <div class="panel-heading">Game Message</div>
+                    <div class="panel-body">
+
+                        <p style="text-align:left"><strong> Message:</strong> <span id="gamemessage" style="display:none">Welcome to Tic Tac Toe</span></p>
+                        <p style="text-align:left"><strong> Player1 Wins:</strong>  <span id="player1wins" style="display:none">0</span></p>
+                        <p style="text-align:left"><strong> Player2 Wins:</strong>  <span id="player2wins" style="display:none">0</span></p>
+                        <p style="text-align:left"><strong> Games Tied:</strong>  <span id="gamestied" style="display:none">0</span></p>
+                        <p style="text-align:center"><button id="reset">Game Reset</button></p>
+
+
+                    </div>
+                </div>
+       
+                &nbsp;&nbsp;
+                <!--Player Info Div-->
+                <div id="playerinfo" class="panel panel-primary" style="display:none">
+                    <div class="panel-heading">Player Info</div>
+                    <div class="panel-body">
+                        <p style="text-align:left"><strong> Player1 Name:</strong>  <input id="player1name" type="text" name="firstname" placeholder="Enter your Name"></p>
+
+                        <p style="text-align:left"><strong> Game Symbol:</strong>  &nbsp;<button id="player1buttonx">X</button> &nbsp;<button id="player1buttono">O</button></p>
+
+                        <p style="text-align:left"><strong> Player2 Name:</strong>  <input id="player2name" type="text" name="firstname" placeholder="Enter your Name"></p>
+
+                        <p style="text-align:left"><strong> Game Symbol:</strong>  &nbsp;<button id="player2buttonx">X</button> &nbsp;<button id="player2buttono">O</button></p>
+                    </div>
+                </div>
+
+            
+
+
+
+        </div>
+        </div>
+        </div>
+
+        <!-- JavaScript and JQuery -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="tictactoe.js"></script>
+</body>
+
+</html> 
